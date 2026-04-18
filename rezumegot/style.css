@@ -1,0 +1,417 @@
+/* ... твой reset оставляем ... */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, 'Inter', 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: #111722;
+}
+
+/* линия */
+body::before {
+    content: '';
+    position: fixed;
+    left: 250px;
+    top: 0;
+    width: 7px;
+    height: 100vh;
+    background: #5e5d5d;;
+}
+
+/* навигация */
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: fixed;
+    left: 13px; 
+    top: 350px;
+}
+
+/* ссылки */
+header nav a {
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(174, 95, 26);
+    transition: .3s;
+}
+
+header nav a:hover {
+    color: rgb(214, 125, 46);
+    transform: scale(1.05);
+}
+
+/* заголовок */
+header h1 {
+    color: rgb(150, 99, 54);
+    font-size: 70px;
+    position: absolute;
+    left: 630px; 
+    top: 585px;  
+}
+
+.tema img {
+    position: absolute;
+    left: 720px; 
+    top: 185px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 80%;  /* сдвигает изображение вниз */
+    border-radius: 50%;
+    border: 7px solid #090d1f;
+    transition: .3s;
+}
+
+.tema img:hover {
+    transform: scale(1.1);
+}
+/* якоря */
+#about { scroll-margin-top: 43vh; }
+#naviki { scroll-margin-top: 30vh; }
+#ucheba { scroll-margin-top: 34vh; }
+#Primer { scroll-margin-top: 20vh; }
+#Kontakti {scroll-margin-top: 10vh;}
+
+
+
+/* ОБО МНЕ */
+.about {
+    color: #c3c2c2;
+    font-size: 50px;
+    position: absolute;
+    left: 790px; 
+    top: 1060px;  
+}
+
+.textabout {
+    color: #c3c2c2;
+    font-size: 20px;
+    position: absolute;
+    left: 300px; 
+    top: 1170px; 
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #c3c2c2;
+    border-radius: 50%;
+    position: absolute;
+    left: 270px; 
+    top: 1190px; 
+}
+
+/* НАВЫКИ */
+.Naviki {
+    color: #c3c2c2;
+    font-size: 50px;
+    position: absolute;
+    left: 670px; 
+    top: 1550px;  
+}
+
+.skills-container {
+    position: absolute;
+    left: 300px;
+    top: 1720px;
+    width: 400px;
+}
+
+.skill { margin-bottom: 25px; }
+
+.skill p {
+    color: #c3c2c2;
+    margin-bottom: 5px;
+}
+
+.skill p::before {
+    content: "•";
+    margin-right: 8px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill { height: 100%; }
+
+.skill-fill.python { width: 85%; background: linear-gradient(90deg,#4facfe,#00f2fe); }
+.skill-fill.cpp { width: 50%; background: linear-gradient(90deg,#43e97b,#38f9d7); }
+.skill-fill.html { width: 60%; background: linear-gradient(90deg,#ff7e5f,#feb47b); }
+.skill-fill.css { width: 40%; background: linear-gradient(90deg,#6a11cb,#2575fc); }
+
+/* ОБРАЗОВАНИЕ — исправленный блок */
+.ucheba-block {
+    position: relative;
+}
+
+.ucheba {
+    color: #c3c2c2;
+    font-size: 50px;
+    position: absolute;
+    left: 720px;
+    top: 2300px;
+}
+
+.education-text {
+    color: #c3c2c2;
+    position: absolute;
+    padding: 2rem;
+    display: flex;
+    left: 600px;
+    top: 2450px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+    font-size: 23px;
+}
+
+/* Стили для ссылок-кнопок */
+.education-text a {
+    color: #c3c2c2;                 /* Белый цвет */
+    text-decoration: none;          /* Убираем подчёркивание */
+    background: transparent;
+    transition: transform 0.25s ease, color 0.2s ease;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+}
+
+/* Увеличение при наведении */
+.education-text a:hover {
+    transform: scale(1.08);
+    color: #e0a158;                /* Лёгкий акцентный оттенк при желании, можно оставить белым */
+}
+
+
+.arrow-up {
+    position: relative;
+    width: 2px;
+    height: 40px;
+    background: #c3c2c2;
+    margin: 15px 10px;
+}
+
+.arrow-up::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid #c3c2c2;
+    border-top: 2px solid #c3c2c2;
+    transform: rotate(45deg);
+}
+
+/* ПРИМЕРЫ РАБОТ */
+.Primer {
+    color: #c3c2c2;
+    font-size: 50px;
+    position: absolute;
+    left: 700px; 
+    top: 3000px;    
+}
+
+.imageRabota {
+    position: absolute;
+    left: 300px;
+    top: 3150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imageRabota .work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.imageRabota img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #090d1f;
+    transition: transform 0.3s ease;
+}
+
+.imageRabota img:hover {
+    transform: scale(1.02);
+}
+
+.work-caption {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.work-caption p {
+    color: #c3c2c2;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.work-caption a {
+    color: #e0a158;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.work-caption a:hover {
+    color: #ffbc6e;
+    transform: scale(1.05);
+}
+
+/* КОНТАКТЫ */
+.Kontakti {
+    color: #c3c2c2;
+    font-size: 50px;
+    position: absolute;
+    left: 750px; 
+    top: 3950px;   
+}
+
+.contacts-list {
+    position: absolute;
+    left: 300px;
+    top: 4100px;
+    padding: 2rem 3rem;
+    min-width: 400px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background 0.2s ease, transform 0.2s ease;
+    position: relative;
+}
+
+/* Точка перед каждой строчкой */
+.contact-item::before {
+    content: "•";
+    color: #c3c2c2;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.contact-item:hover {
+    background: rgba(224, 161, 88, 0.1);
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 28px;
+    min-width: 45px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #c3c2c2;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    word-break: break-all;
+}
+
+.contact-item a:hover {
+    color: #e0a158;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 1024px) {
+    .contacts-list {
+        left: 200px;
+        min-width: 350px;
+        padding: 1.5rem 2rem;
+    }
+    .contact-item a {
+        font-size: 18px;
+    }
+    .contact-item::before {
+        font-size: 20px;
+    }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .Kontakti {
+        left: 35%;
+        font-size: 40px;
+        top: 3700px;
+    }
+    .contacts-list {
+        left: 10%;
+        right: 10%;
+        min-width: auto;
+        width: 80%;
+        top: 3850px;
+        padding: 1.2rem;
+    }
+    .contact-icon {
+        font-size: 24px;
+        min-width: 35px;
+    }
+    .contact-item a {
+        font-size: 16px;
+    }
+    .contact-item::before {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Kontakti {
+        left: 30%;
+        font-size: 35px;
+        top: 3650px;
+    }
+    .contacts-list {
+        left: 5%;
+        width: 90%;
+        top: 3780px;
+        padding: 1rem;
+    }
+    .contact-item {
+        gap: 10px;
+        padding: 8px 10px;
+    }
+    .contact-icon {
+        font-size: 20px;
+        min-width: 30px;
+    }
+    .contact-item a {
+        font-size: 14px;
+    }
+    .contact-item::before {
+        font-size: 16px;
+    }
+}
+
+.dlina{
+    position: absolute;
+    left: 750px; 
+    top: 4600px; 
+}
