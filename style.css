@@ -31,7 +31,7 @@ header nav {
     gap: 30px;
     position: fixed;
     left: 13px; 
-    top: 350px;
+    top: 400px;
 }
 
 /* ссылки */
@@ -50,18 +50,18 @@ header nav a:hover {
 /* заголовок */
 header h1 {
     color: rgb(150, 99, 54);
-    font-size: 70px;
+    font-size: 80px;
     position: absolute;
-    left: 630px; 
-    top: 585px;  
+    left: 730px; 
+    top: 700px;  
 }
 
 .tema img {
     position: absolute;
-    left: 720px; 
-    top: 185px;
-    width: 400px;
-    height: 400px;
+    left: 820px; 
+    top: 230px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     object-position: center 80%;  /* сдвигает изображение вниз */
     border-radius: 50%;
@@ -74,7 +74,7 @@ header h1 {
 }
 /* якоря */
 #about { scroll-margin-top: 43vh; }
-#naviki { scroll-margin-top: 30vh; }
+#naviki { scroll-margin-top: 36vh; }
 #ucheba { scroll-margin-top: 34vh; }
 #Primer { scroll-margin-top: 20vh; }
 #Kontakti {scroll-margin-top: 10vh;}
@@ -84,18 +84,18 @@ header h1 {
 /* ОБО МНЕ */
 .about {
     color: #c3c2c2;
-    font-size: 50px;
+    font-size: 65px;
     position: absolute;
-    left: 790px; 
-    top: 1060px;  
+    left: 900px; 
+    top: 1250px;  
 }
 
 .textabout {
     color: #c3c2c2;
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     left: 300px; 
-    top: 1170px; 
+    top: 1400px; 
 }
 
 .circle {
@@ -105,23 +105,23 @@ header h1 {
     border-radius: 50%;
     position: absolute;
     left: 270px; 
-    top: 1190px; 
+    top: 1420px; 
 }
 
 /* НАВЫКИ */
 .Naviki {
     color: #c3c2c2;
-    font-size: 50px;
+    font-size: 65px;
     position: absolute;
-    left: 670px; 
-    top: 1550px;  
+    left: 740px; 
+    top: 1950px;  
 }
 
 .skills-container {
     position: absolute;
     left: 300px;
-    top: 1720px;
-    width: 400px;
+    top: 2100px;
+    width: 450px;
 }
 
 .skill { margin-bottom: 25px; }
@@ -129,11 +129,12 @@ header h1 {
 .skill p {
     color: #c3c2c2;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .skill p::before {
     content: "•";
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .skill-bar {
@@ -158,10 +159,10 @@ header h1 {
 
 .ucheba {
     color: #c3c2c2;
-    font-size: 50px;
+    font-size: 65px;
     position: absolute;
-    left: 720px;
-    top: 2300px;
+    left: 805px;
+    top: 2800px;
 }
 
 .education-text {
@@ -169,13 +170,13 @@ header h1 {
     position: absolute;
     padding: 2rem;
     display: flex;
-    left: 600px;
-    top: 2450px;
+    left: 670px;
+    top: 2930px;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
     text-align: center;
-    font-size: 23px;
+    font-size: 30px;
 }
 
 /* Стили для ссылок-кнопок */
@@ -218,16 +219,16 @@ header h1 {
 /* ПРИМЕРЫ РАБОТ */
 .Primer {
     color: #c3c2c2;
-    font-size: 50px;
+    font-size: 65px;
     position: absolute;
-    left: 700px; 
-    top: 3000px;    
+    left: 760px; 
+    top: 3680px;    
 }
 
 .imageRabota {
     position: absolute;
     left: 300px;
-    top: 3150px;
+    top: 3850px;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -239,12 +240,12 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 350px;
+    width: 400px;
 }
 
 .imageRabota img {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
     border-radius: 20px;
     border: 3px solid #090d1f;
@@ -283,16 +284,16 @@ header h1 {
 /* КОНТАКТЫ */
 .Kontakti {
     color: #c3c2c2;
-    font-size: 50px;
+    font-size: 80px;
     position: absolute;
-    left: 750px; 
-    top: 3950px;   
+    left: 840px; 
+    top: 4800px;   
 }
 
 .contacts-list {
     position: absolute;
     left: 300px;
-    top: 4100px;
+    top: 5030px;
     padding: 2rem 3rem;
     min-width: 400px;
 }
@@ -312,7 +313,7 @@ header h1 {
 .contact-item::before {
     content: "•";
     color: #c3c2c2;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     margin-right: 5px;
 }
@@ -331,7 +332,7 @@ header h1 {
 .contact-item a {
     color: #c3c2c2;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     transition: color 0.2s ease;
     word-break: break-all;
 }
